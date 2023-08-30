@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(207, 163, 194);
+}
+.container{
+    position: relative;
+}
+
+div{
+    width: 200px;
+    height: 120px;
+}
+.div1{
+    top: 0px;
+    position: absolute;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: #cfaecd;
+    border-radius: 10px;
+}
+@keyframes first{
+    from{
+        background-color: #e476e7;
+        left: 0;
+    }
+    to{
+        background-color: #f02fa0;
+        left: 1160px;
+    }
+}
+.div2 {
+    position: absolute;
+    top: 120px;
+    animation-name: second;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+    background-color: #cfaecd;
+    border-radius: 10px;
+}
+@keyframes second {
+    from {
+        background-color: #e476e7;
+        left: 0;
+    }
+    to {
+        background-color: #f02fa0;
+        left: 1160px;
+    }
+}
+.div3 {
+    animation-fill-mode: forwards;
+    top: 240px;
+    position: absolute;
+    animation-name: third;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    background-color: #cfaecd;
+    border-radius: 10px;
+}
+@keyframes third {
+    from {
+        background-color: #e476e7;
+        left: 0;
+    }
+
+    to {
+        background-color: #f02fa0;
+        left: 1160px;
+    }
+}
+.div4 {
+    animation-fill-mode: backwards;
+    top: 360px;
+    position: absolute;
+    animation-name: fourth;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-direction: reverse;
+    background-color: #cfaecd;
+    border-radius: 10px;
+}
+@keyframes fourth {
+    from {
+        background-color:#e476e7;
+        left: 0;
+    }
+    to {
+        background-color: #f02fa0;
+        left: 1160px;
+    }
+}
